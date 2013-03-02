@@ -17,6 +17,7 @@
 	<properties>
 
 		<!-- Tester releases and snapshots. -->
+		<!-- See how to setup: https://github.com/barchart/barchart-jenkins-tester/wiki -->
 		<testerRepoID>barchart-jenkins-tester</testerRepoID>
 		<testerRepoURL>s3://${testerRepoID}</testerRepoURL>
 
