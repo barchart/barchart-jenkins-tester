@@ -11,7 +11,11 @@
 	<description>Eclipse/Maven import helper.</description>
 
 	<modules>
+	
 		<module>a</module>
+		
+		<module>insect</module>
+		
 	</modules>
 
 </project>
