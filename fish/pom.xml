@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.barchart.test</groupId>
+		<artifactId>tester-archon</artifactId>
+		<version>1.0.12</version>
+		<relativePath />
+	</parent>
+
+	<groupId>com.barchart.test</groupId>
+	<artifactId>tester-fish</artifactId>
+	<version>1.1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<scm>
+		<url>https://github.com/barchart/barchart-jenkins-tester</url>
+		<connection>scm:git:git://github.com/barchart/barchart-jenkins-tester.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/barchart/barchart-jenkins-tester.git</developerConnection>
+		<tag>master</tag>
+	</scm>
+
+	<modules>
+
+		<!-- Level 2 project. -->
+		<module>salmon</module>
+
+		<!-- Level 2 project. -->
+		<module>shark</module>
+
+	</modules>
+
+</project>

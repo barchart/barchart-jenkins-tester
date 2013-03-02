@@ -3,6 +3,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
+	<!-- Level 0 archon. -->
 	<groupId>com.barchart.test</groupId>
 	<artifactId>tester-import</artifactId>
 	<version>0.0.0</version>
@@ -12,9 +13,14 @@
 
 	<modules>
 
+		<!-- Archon project. -->
 		<module>a</module>
 
+		<!-- Level 1 project. -->
 		<module>insect</module>
+
+		<!-- Level 1 archon. -->
+		<module>fish</module>
 
 	</modules>
 
