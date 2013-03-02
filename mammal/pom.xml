@@ -12,9 +12,8 @@
 	</parent>
 
 	<!-- Level 1 archon. -->
-	<groupId>com.barchart.test</groupId>
-	<artifactId>tester-fish</artifactId>
-	<version>1.1.0-SNAPSHOT</version>
+	<artifactId>tester-mammal</artifactId>
+	<version>1.2.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<scm>
@@ -26,11 +25,11 @@
 
 	<modules>
 
-		<!-- Level 2 project. -->
-		<module>salmon</module>
+		<!-- Level 2 archon. -->
+		<module>aquatic</module>
 
-		<!-- Level 2 project. -->
-		<module>shark</module>
+		<!-- Level 2 archon. -->
+		<module>terrestrial</module>
 
 	</modules>
 

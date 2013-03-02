@@ -3,6 +3,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
+	<!-- Level 1 archon. -->
 	<parent>
 		<groupId>com.barchart.test</groupId>
 		<artifactId>tester-fish</artifactId>
@@ -11,7 +12,6 @@
 	</parent>
 
 	<!-- Level 2 project. -->
-	<groupId>com.barchart.test</groupId>
 	<artifactId>tester-fish-salmon</artifactId>
 	<version>2.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>

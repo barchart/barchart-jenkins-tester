@@ -9,18 +9,21 @@
 	<version>0.0.0</version>
 	<packaging>pom</packaging>
 
-	<description>Eclipse/Maven import helper.</description>
+	<description>Eclipse/Jenkins/Maven import helper.</description>
 
 	<modules>
 
-		<!-- Archon project. -->
+		<!-- Level 1 archon. -->
 		<module>a</module>
 
 		<!-- Level 1 project. -->
-		<module>insect</module>
+		<module>ant</module>
 
 		<!-- Level 1 archon. -->
 		<module>fish</module>
+
+		<!-- Level 1 archon. -->
+		<module>mammal</module>
 
 	</modules>
 

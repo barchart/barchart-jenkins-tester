@@ -20,6 +20,8 @@
 		<!-- See how to setup: https://github.com/barchart/barchart-jenkins-tester/wiki -->
 		<testerRepoID>barchart-jenkins-tester</testerRepoID>
 		<testerRepoURL>s3://${testerRepoID}</testerRepoURL>
+		
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
 	</properties>
 
