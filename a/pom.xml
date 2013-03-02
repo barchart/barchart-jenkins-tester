@@ -9,13 +9,20 @@
 	<packaging>pom</packaging>
 
 	<distributionManagement>
-	
+
 		<!-- Local releases and snapshots. -->
 		<repository>
 			<id>jenkins-tester</id>
 			<url>file:${user.home}/jenkins-tester</url>
 		</repository>
-		
+
 	</distributionManagement>
+
+	<scm>
+		<url>https://github.com/barchart/barchart-jenkins-tester</url>
+		<connection>scm:git:git://github.com/barchart/barchart-jenkins-tester.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/barchart/barchart-jenkins-tester.git</developerConnection>
+		<tag>master</tag>
+	</scm>
 
 </project>
