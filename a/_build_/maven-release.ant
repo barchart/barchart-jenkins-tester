@@ -20,8 +20,6 @@
 			<arg value="release:prepare" />
 			<arg value="release:perform" />
 
-			<arg value="--errors" />
-
 		</exec>
 
 	</target>
