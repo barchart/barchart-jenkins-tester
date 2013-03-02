@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 
@@ -18,7 +19,7 @@
 
 		<!-- Tester releases and snapshots. -->
 		<testerRepoID>jenkins-tester</testerRepoID>
-		<testerRepoURL>file:${user.home}/jenkins-tester</testerRepoURL>
+		<testerRepoURL>file:${user.home}/${testerRepoID}</testerRepoURL>
 
 	</properties>
 
@@ -29,23 +30,23 @@
 			<url>${testerRepoURL}</url>
 			<releases>
 				<enabled>true</enabled>
-				<updatePolicy>always</updatePolicy>
 			</releases>
 			<snapshots>
 				<enabled>true</enabled>
-				<updatePolicy>always</updatePolicy>
 			</snapshots>
 		</repository>
 
 	</repositories>
 
 	<distributionManagement>
-
 		<repository>
 			<id>${testerRepoID}</id>
 			<url>${testerRepoURL}</url>
 		</repository>
-
+		<snapshotRepository>
+			<id>${testerRepoID}</id>
+			<url>${testerRepoURL}</url>
+		</snapshotRepository>
 	</distributionManagement>
 
 	<build>
