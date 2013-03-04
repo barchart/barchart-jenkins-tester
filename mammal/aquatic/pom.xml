@@ -23,13 +23,15 @@
 		<tag>master</tag>
 	</scm>
 
+	<!-- Disable modules to verify parent and modules can be released independently. -->
+	<!-- Remember to include modules into the tester-import project. -->
 	<modules>
 
 		<!-- Level 3 project. -->
-		<module>dolphin</module>
+		<!-- <module>dolphin</module> -->
 
 		<!-- Level 3 project. -->
-		<module>whale</module>
+		<!-- <module>whale</module> -->
 
 	</modules>
 
