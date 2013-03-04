@@ -25,6 +25,9 @@
 		<!-- Level 1 archon. -->
 		<module>mammal</module>
 
+		<!-- Level 1 project. -->
+		<module>zoo</module>
+
 	</modules>
 
 	<build>
