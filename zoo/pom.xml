@@ -3,18 +3,19 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<!-- Level 1 archon. -->
+	<!-- Level 0 archon. -->
 	<parent>
 		<groupId>com.barchart.test</groupId>
-		<artifactId>tester-fish</artifactId>
-		<version>1.1.0-SNAPSHOT</version>
+		<artifactId>tester-archon</artifactId>
+		<version>1.0.12</version>
 		<relativePath>../a/</relativePath>
 	</parent>
 
-	<!-- Level 2 project. -->
-	<artifactId>tester-fish-salmon</artifactId>
-	<version>2.0.0-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<!-- Level 1 project. -->
+	<groupId>com.barchart.test</groupId>
+	<artifactId>tester-zoo</artifactId>
+	<version>1.1.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 
 	<scm>
 		<url>https://github.com/barchart/barchart-jenkins-tester</url>
