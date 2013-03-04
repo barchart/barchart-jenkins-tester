@@ -2,6 +2,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
+	<!-- Level 1 archon. -->
 	<groupId>com.barchart.test</groupId>
 	<artifactId>tester-archon</artifactId>
 	<version>1.0.13-SNAPSHOT</version>
@@ -65,6 +66,7 @@
 
 		</extensions>
 
+		<!-- Freeze plug-in versions which affect release. -->
 		<pluginManagement>
 			<plugins>
 
