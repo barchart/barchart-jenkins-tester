@@ -24,9 +24,6 @@
 			<arg value="--define" />
 			<arg value="message=maven-robot" />
 
-			<arg value="--define" />
-			<arg value="pushChanges=true" />
-
 		</exec>
 
 	</target>

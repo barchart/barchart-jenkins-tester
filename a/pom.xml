@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 
@@ -21,7 +22,7 @@
 		<!-- See how to setup: https://github.com/barchart/barchart-jenkins-tester/wiki -->
 		<testerRepoID>barchart-jenkins-tester</testerRepoID>
 		<testerRepoURL>s3://${testerRepoID}</testerRepoURL>
-		
+
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
 	</properties>
@@ -70,10 +71,18 @@
 		<pluginManagement>
 			<plugins>
 
+				<!-- Critical: v 2.4 is broken. -->
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-release-plugin</artifactId>
 					<version>2.3.2</version>
+				</plugin>
+
+				<!-- Critical: v 1.8 is broken. -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-scm-plugin</artifactId>
+					<version>1.7</version>
 				</plugin>
 
 				<plugin>
