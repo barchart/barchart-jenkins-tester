@@ -16,8 +16,6 @@
 
 		<exec executable="${executable}">
 
-			<arg value="versions:commit" />
-
 			<arg value="scm:checkin" />
 			
 			<arg value="--define" />
