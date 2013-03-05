@@ -18,8 +18,16 @@
 
 			<arg value="versions:commit" />
 
+			<arg value="scm:add" />
+			<arg value="--define" />
+			<arg value="includes=pom.xml" />
+
+			<arg value="scm:checkin" />
+			<arg value="--define" />
+			<arg value="message=maven-robot" />
+
 		</exec>
-		
+
 	</target>
 
 </project>
