@@ -1,0 +1,31 @@
+<!--
+	Ensure snapshot version on "ant" in "zoo".
+-->
+<project default="maven" basedir="../zoo">
+
+	<echo message="basedir : ${basedir}" />
+
+	<target name="maven">
+
+		<condition property="executable" value="mvn">
+			<os family="unix" />
+		</condition>
+		<condition property="executable" value="mvn.bat">
+			<os family="windows" />
+		</condition>
+
+		<exec executable="${executable}">
+
+			<arg value="versions:use-latest-snapshots" />
+
+			<arg value="scm:checkin" />
+			<arg value="--define" />
+			<arg value="scm.includes=**/pom.xml" />
+			<arg value="--define" />
+			<arg value="message=case-02" />
+
+		</exec>
+
+	</target>
+
+</project>
