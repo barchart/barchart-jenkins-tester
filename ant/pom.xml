@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>com.barchart.test</groupId>
 		<artifactId>tester-archon</artifactId>
-		<version>1.0.19-SNAPSHOT</version>
+		<version>1.0.18</version>
 		<relativePath>../a/</relativePath>
 	</parent>
 
