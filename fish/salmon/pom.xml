@@ -8,7 +8,7 @@
 		<groupId>com.barchart.test</groupId>
 		<artifactId>tester-fish</artifactId>
 		<version>1.1.0-SNAPSHOT</version>
-		<relativePath>../a/</relativePath>
+		<relativePath>../</relativePath>
 	</parent>
 
 	<!-- Level 2 project. -->
