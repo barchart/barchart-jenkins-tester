@@ -22,7 +22,7 @@
 
 			<arg value="scm:checkin" />
 			<arg value="--define" />
-			<arg value="scm.includes=pom.xml" />
+			<arg value="includes=**/pom.xml" />
 			<arg value="--define" />
 			<arg value="message=case-01" />
 
