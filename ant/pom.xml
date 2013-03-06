@@ -12,7 +12,7 @@
 
 	<!-- Level 1 project -->
 	<artifactId>tester-ant</artifactId>
-	<version>1.0.20-SNAPSHOT</version>
+	<version>1.0.22-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<scm>
