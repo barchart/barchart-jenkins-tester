@@ -18,6 +18,9 @@
 
 			<arg value="versions:use-latest-snapshots" />
 
+		</exec>
+		<exec executable="${executable}">
+
 			<arg value="scm:checkin" />
 			<arg value="--define" />
 			<arg value="includes=**/pom.xml" />
