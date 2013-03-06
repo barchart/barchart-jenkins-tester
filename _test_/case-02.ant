@@ -16,7 +16,7 @@
 
 		<exec executable="${executable}">
 
-			<arg value="versions:use-latest-snapshots" />
+			<arg value="versions:use-latest-versions" />
 			<arg value="--define" />
 			<arg value="allowSnapshots=true" />
 
