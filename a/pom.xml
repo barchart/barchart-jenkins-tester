@@ -12,7 +12,7 @@
 		<url>https://github.com/barchart/barchart-jenkins-tester</url>
 		<connection>scm:git:git://github.com/barchart/barchart-jenkins-tester.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/barchart/barchart-jenkins-tester.git</developerConnection>
-		<tag>tester-archon-1.0.14</tag>
+		<tag>master</tag>
 	</scm>
 
 	<properties>
