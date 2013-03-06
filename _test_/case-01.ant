@@ -1,7 +1,7 @@
 <!--
 	Ensure snapshot parent version on "ant".
 -->
-<project default="maven" basedir="./../ant">
+<project default="maven" basedir="../ant">
 
 	<echo message="basedir : ${basedir}" />
 
