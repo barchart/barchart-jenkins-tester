@@ -17,15 +17,25 @@
 		<exec executable="${executable}">
 
 			<arg value="versions:use-latest-versions" />
+
 			<arg value="--define" />
 			<arg value="allowSnapshots=true" />
+
+			<arg value="--define" />
+			<arg value="allowMajorUpdates=false" />
+			<arg value="--define" />
+			<arg value="allowMinorUpdates=false" />
+			<arg value="--define" />
+			<arg value="allowIncrementalUpdates=true" />
 
 		</exec>
 		<exec executable="${executable}">
 
 			<arg value="scm:checkin" />
+			
 			<arg value="--define" />
 			<arg value="includes=**/pom.xml" />
+			
 			<arg value="--define" />
 			<arg value="message=case-02" />
 
