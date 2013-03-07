@@ -71,7 +71,7 @@ Test Cases
 	  `plant-archon`, `mammal-archon`).
 	* Run `mvn versions:update-parent versions:use-latest-snapshots` on entire
 	  project to update everything to current snapshots that use the new archon.
-	* Commit dependency changes and cascade-build `ecosystem` project.
+	* Cascade-build `ecosystem` project.
 2.	A core dependency is updated with new features. All projects that depend
 	on it must be rebuilt to take advantage of new features.
 	* Update all dependent projects to use current snapshots. For core
