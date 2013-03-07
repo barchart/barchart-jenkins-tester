@@ -3,10 +3,9 @@ Project Structure
 
 *Legend:*
 ```
-*  - Releasable, has assocated Jenkins build job
-+  - Submodule only, releasable only with parent
-X  - Not releasable / no dependent projects, only provides submodule
-     grouping for convenient local Maven builds
+*  - Releasable, has associated Jenkins build job
++  - Submodule releasable only with parent, no associated Jenkins build job
+X  - Not releasable, no associated Jenking build job
 D  - Directory only, not a Maven project
 () - Project dependencies
 [] - Parent (if not directly under)
@@ -83,9 +82,9 @@ Test Cases
 Idea: Efficiently Updating Local Dependencies
 -------------------------------------------------------------------------------
 
-How do we update the minimal set of projects for a new release? For example,
-when updating `insect`, we only want to update any downstream projects to avoid
-excessive releases.
+How do we update the minimal set of project dependencies for a new release? For
+example, when updating `insect`, we only want to update any downstream projects
+to avoid excessive releases.
 
 Possibility: new Maven Versions Plugin goal that takes an artifact ID,
 walks the dependency tree of the current project, and updates all dependency
