@@ -97,7 +97,9 @@ Possibility: new Maven Versions Plugin goal that takes an artifact ID,
 walks the dependency tree of the current project, and updates all dependency
 references to the current snapshot for that artifact. It then does the same
 for any affected artifacts, converting any of their dependent projects to
-use the latest snapshot for them.
+use the latest snapshot for them. (Thought: should this be irrespective of
+version dependencies, or only affect dependent projects referencing the latest
+release?)
 
 Example: if we want to release `insect`, run:
   
