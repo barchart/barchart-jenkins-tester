@@ -64,10 +64,11 @@ Use Cases
 Test Cases
 -------------------------------------------------------------------------------
 
-1.	archon is updated with new dependencies. All projects need to be updated
+1.	`archon` is updated with new dependencies. All projects need to be updated
 	and rebuilt.
-	* Release new archon.
-	* Release any sub-archons that depend on the new archon.
+	* Release new version of `archon`.
+	* Release any sub-archons that depend on the new archon (`animal-archon`,
+	  `plant-archon`, `mammal-archon`).
 	* Run `mvn versions:update-parent versions:use-latest-snapshots` on entire
 	  project to update everything to current snapshots that use the new archon.
 	* Commit dependency changes and cascade-build `ecosystem` project.
@@ -76,7 +77,7 @@ Test Cases
 	* Update all dependent projects to use current snapshots. For core
 	  dependencies (`water`), this may mean updating the entire project
 	  tree. For less common dependencies (`insect`) this may mean just
-	  updating a subtree ("animal/bug") and any dependencies (`ecosystem`).
+	  updating a subtree (`animal/bug`) and any dependencies (`ecosystem`).
 	* Cascade-build `ecosystem` project.
 3.	Update a mid-level dependency (i.e. `insect`), but only cascade-release the tree it
 	directly affects rather then the entire project.
