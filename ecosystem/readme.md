@@ -78,7 +78,7 @@ Test Cases
 	  tree. For less common dependencies (`insect`) this may mean just
 	  updating a subtree ("animal/bug") and any dependencies (`ecosystem`).
 	* Cascade-build `ecosystem` project.
-3.	Update a mid-level dependency (i.e. `insect`), but only cascade-release a the tree it
+3.	Update a mid-level dependency (i.e. `insect`), but only cascade-release the tree it
 	directly affects rather then the entire project.
 	* Run `mvn versions:use-latest-snapshots` on animal/bug.
 	* Update `ecosystem` manually to use latest snapshots of `animal/bug/fly` and
