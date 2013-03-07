@@ -84,8 +84,8 @@ Idea: Efficiently Updating Local Dependencies
 -------------------------------------------------------------------------------
 
 How do we update the minimal set of projects for a new release? For example,
-when updating `insect`, we only want to update `animal/bug` and `ecosystem`
-to use latest snapshots for specific projects.
+when updating `insect`, we only want to update any downstream projects to avoid
+excessive releases.
 
 Possibility: new Maven Versions Plugin goal that takes an artifact ID,
 walks the dependency tree of the current project, and updates all dependency
