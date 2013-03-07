@@ -99,12 +99,9 @@ Example: if we want to release `insect`, run:
 	-Dincludes=com.barchart.test.jenkinscascade:insect`
 
 This would do the following steps:
+
 1. Update `ant` and `fly` to use the current snapshot version of `insect`
-2. Update `sparrow`, `salmon`, and `ecosystem` to use the current snapshot
-   versions of `ant` and `fly`
-3. Update `bear`, `cat` and `shark`, and `ecosystem` to use the current
-snapshot versions for `sparrow` and `salmon`
-4. Update `ecosystem` to use the current snapshots for `bear`, `cat`, and
-`shark`
-5. Voila, only the necessary projects have been updated, and `ecosystem`
-is ready for a cascade build.
+2. Update `sparrow`, `salmon`, and `ecosystem` to use the current snapshot versions of `ant` and `fly`
+3. Update `bear`, `cat` and `shark`, and `ecosystem` to use the current snapshot versions for `sparrow` and `salmon`
+4. Update `ecosystem` to use the current snapshots for `bear`, `cat`, and`shark`
+5. Voila, only the necessary projects have been updated, and `ecosystem` is ready for a cascade build.
