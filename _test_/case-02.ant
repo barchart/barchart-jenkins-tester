@@ -1,7 +1,7 @@
 <!--
 	Ensure snapshot version on "ant" in "zoo".
 -->
-<project default="maven" basedir="../zoo">
+<project default="maven" basedir="../.">
 
 	<echo message="basedir : ${basedir}" />
 
@@ -14,7 +14,27 @@
 			<os family="windows" />
 		</condition>
 
-		<exec executable="${executable}">
+		<exec executable="${executable}" dir="ant">
+
+			<arg value="release:prepare" />
+			<arg value="release:perform" />
+
+			<arg value="--define" />
+			<arg value="resume=false" />
+
+			<arg value="--define" />
+			<arg value="localCheckout=true" />
+
+		</exec>
+
+		<exec executable="${executable}" dir="ant">
+
+			<arg value="clean" />
+			<arg value="deploy" />
+
+		</exec>
+
+		<exec executable="${executable}" dir="zoo">
 
 			<arg value="versions:use-latest-versions" />
 
@@ -29,13 +49,13 @@
 			<arg value="allowIncrementalUpdates=true" />
 
 		</exec>
-		<exec executable="${executable}">
+		<exec executable="${executable}" dir="zoo">
 
 			<arg value="scm:checkin" />
-			
+
 			<arg value="--define" />
 			<arg value="includes=**/pom.xml" />
-			
+
 			<arg value="--define" />
 			<arg value="message=case-02" />
 
