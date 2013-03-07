@@ -75,6 +75,7 @@ Test Cases
 	  project to update everything to current snapshots that use the new archon
 	* Commit dependency changes and cascade-build "ecosystem" project
 
+
 2.	A core dependency is updated with new features. All projects that depend
 	on it must be rebuilt to take advantage of new features.
 
