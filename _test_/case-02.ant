@@ -26,7 +26,6 @@
 			<arg value="localCheckout=true" />
 
 		</exec>
-
 		<exec executable="${executable}" dir="ant">
 
 			<arg value="clean" />
