@@ -1,7 +1,7 @@
 Project Structure
 -----------------
 
-Legend:
+*Legend:*
 ```
 *  - Releasable, has assocated Jenkins build job
 +  - Submodule only, releasable only with parent
@@ -12,9 +12,10 @@ D  - Directory only, not a Maven project
 [] - Parent (if not directly under)
 ```
 
+*Layout:*
 ```
 [*] archon
-[X] animal - NOT RELEASABLE
+[X] animal [archon]
 	[*] animal-archon [archon] (air, water)
 	[X] mammal
 		[*] mammal-archon [animal-archon] (sunlight)
@@ -33,7 +34,7 @@ D  - Directory only, not a Maven project
 		[*] worm [animal-archon] (dirt, water)
 		[*] ant [animal-archon] (insect, dirt, grass)
 		[*] fly [animal-archon] (insect, cow)
-[X] plant
+[X] plant [archon]
 	[*] plant-archon [archon] (air, water, dirt, sunlight)
 	[*] grass [plant-archon]
 	[*] berry [plant-archon]
