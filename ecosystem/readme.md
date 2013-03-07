@@ -1,0 +1,121 @@
+Project Structure
+-----------------
+
+Legend:
+```
+*  - Releasable, has assocated Jenkins build job
++  - Submodule only, releasable only with parent
+X  - Not releasable / no dependent projects, only provides submodule
+     grouping for convenient local Maven builds
+D  - Directory only, not a Maven project
+() - Project dependencies
+[] - Parent (if not directly under)
+```
+
+```
+[*] archon
+[X] animal - NOT RELEASABLE
+	[*] animal-archon [archon] (air, water)
+	[X] mammal
+		[*] mammal-archon [animal-archon] (sunlight)
+		[*] human [mammal-archon] (cow)
+		[*] bear [mammal-archon] (salmon)
+		[*] cow [mammal-archon] (corn)
+		[*] cat [mammal-archon] (sparrow)
+	[*] bird [animal-archon]
+		[+] sparrow (berry, ant)
+		[+] robin (worm)
+	[*] fish [animal-archon] (water)
+		[+] salmon (fly)
+		[+] shark (salmon)
+	[X] bug
+		[*] insect [animal-archon] (air, water)
+		[*] worm [animal-archon] (dirt, water)
+		[*] ant [animal-archon] (insect, dirt, grass)
+		[*] fly [animal-archon] (insect, cow)
+[X] plant
+	[*] plant-archon [archon] (air, water, dirt, sunlight)
+	[*] grass [plant-archon]
+	[*] berry [plant-archon]
+	[*] tree [plant-archon]
+	[*] corn [plant-archon]
+[D] resource
+	[*] air [archon]
+	[*] water [archon]
+	[*] dirt [archon]
+	[*] sunlight [archon]
+[*] ecosystem [archon] (depends on all leaf projects above)
+```
+
+Use Cases
+-------------------------------------------------------------------------------
+
+|Project|Use Case|
+|-------|--------|
+|archon|Top-level parent project.|
+|animal/mammal|Grouping of related projects with a common sub-archon, and
+				various dependencies from the overall project. Each is
+				independently releasable.|
+|animal/bird|Releasable parent project with submodules that are not released
+				independently|
+|animal/fish|Releasable parent project with submodules that are not released
+				independently. Parent also provides some dependencies.|
+|animal/bug|Grouping of related projects where many depend on a sibling
+				project. Each is independently releaseable.|
+|plant/*|Related projects with a common archon and no additional
+				dependencies. Each is independently releaseable.|
+|resource/*|Basic projects with no common parent and no dependencies.|
+|ecosystem|Master build application that pulls in all leaf projects. This
+				is the project that will be cascade-built the most.|
+
+Test Cases
+-------------------------------------------------------------------------------
+
+1.	archon is updated with new dependencies. All projects need to be updated
+	and rebuilt.
+
+	Proposed workflow:
+	* Release new archon
+	* Release any sub-archons that depend on the new archon
+	* Run "mvn versions:update-parent versions:use-latest-snapshots" on entire
+	  project to update everything to current snapshots that use the new archon
+	* Commit dependency changes and cascade-build "ecosystem" project
+
+2.	A core dependency is updated with new features. All projects that depend
+	on it must be rebuilt to take advantage of new features.
+
+	Proposed workflow:
+	* Update all dependent projects to use current snapshots. For core
+	  dependencies ("water"), this may mean updating the entire project
+	  tree. For less common dependencies ("insect") this may mean just
+	  updating a subtree ("animal/bug") and any dependencies ("ecosystem").
+	* Cascade-build "ecosystem" project
+
+Updating dependencies locally to prepare for cascade build
+-------------------------------------------------------------------------------
+
+How do we update the minimal set of projects for a new release? For example,
+when updating `insect`, we only want to update `animal/bug` and `ecosystem`
+to use latest snapshots for specific projects.
+
+Possibility: new Maven Versions Plugin goal that takes an artifact ID,
+walks the dependency tree of the current project, and updates all dependency
+references to the current snapshot for that artifact. It then does the same
+for any affected artifacts, converting any of their dependent projects to
+use the latest snapshot for them.
+
+Example: if we want to release `insect`, run:
+  
+`mvn versions:use-latest-snaphots-cascade
+	-Dincludes=com.barchart.test.jenkinscascade:insect`
+
+This would do the following steps:
+1. Update `ant` and `fly` to use the current snapshot version of `insect`
+2. Update `sparrow`, `salmon`, and `ecosystem` to use the current snapshot
+   versions of `ant` and `fly`
+3. Update `bear`, `cat` and `shark`, and `ecosystem` to use the current
+snapshot versions for `sparrow` and `salmon`
+4. Update `ecosystem` to use the current snapshots for `bear`, `cat`, and
+`shark`
+5. Voila, only the necessary projects have been updated, and `ecosystem`
+is ready for a cascade build.
