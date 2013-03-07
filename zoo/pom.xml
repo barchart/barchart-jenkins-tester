@@ -28,7 +28,7 @@
 		<dependency>
 			<groupId>com.barchart.test</groupId>
 			<artifactId>tester-ant</artifactId>
-			<version>1.0.34-SNAPSHOT</version>
+			<version>1.0.34</version>
 		</dependency>
 
 	</dependencies>
