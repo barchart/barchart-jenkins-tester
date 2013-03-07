@@ -67,19 +67,13 @@ Test Cases
 
 1.	archon is updated with new dependencies. All projects need to be updated
 	and rebuilt.
-
-	Proposed workflow:
 	* Release new archon
 	* Release any sub-archons that depend on the new archon
 	* Run "mvn versions:update-parent versions:use-latest-snapshots" on entire
 	  project to update everything to current snapshots that use the new archon
 	* Commit dependency changes and cascade-build "ecosystem" project
-
-
 2.	A core dependency is updated with new features. All projects that depend
 	on it must be rebuilt to take advantage of new features.
-
-	Proposed workflow:
 	* Update all dependent projects to use current snapshots. For core
 	  dependencies ("water"), this may mean updating the entire project
 	  tree. For less common dependencies ("insect") this may mean just
