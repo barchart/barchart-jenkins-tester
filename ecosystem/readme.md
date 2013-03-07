@@ -54,20 +54,13 @@ Use Cases
 |Project|Use Case|
 |-------|--------|
 |archon|Top-level parent project.|
-|animal/mammal|Grouping of related projects with a common sub-archon, and
-				various dependencies from the overall project. Each is
-				independently releasable.|
-|animal/bird|Releasable parent project with submodules that are not released
-				independently|
-|animal/fish|Releasable parent project with submodules that are not released
-				independently. Parent also provides some dependencies.|
-|animal/bug|Grouping of related projects where many depend on a sibling
-				project. Each is independently releaseable.|
-|plant/*|Related projects with a common archon and no additional
-				dependencies. Each is independently releaseable.|
+|animal/mammal|Grouping of related projects with a common sub-archon, and various dependencies from the overall project. Each is independently releasable.|
+|animal/bird|Releasable parent project with submodules that are not released independently|
+|animal/fish|Releasable parent project with submodules that are not released independently. Parent also provides some dependencies.|
+|animal/bug|Grouping of related projects where many depend on a sibling project. Each is independently releaseable.|
+|plant/*|Related projects with a common archon and no additional dependencies. Each is independently releaseable.|
 |resource/*|Basic projects with no common parent and no dependencies.|
-|ecosystem|Master build application that pulls in all leaf projects. This
-				is the project that will be cascade-built the most.|
+|ecosystem|Master build application that pulls in all leaf projects. This is the project that will be cascade-built the most.|
 
 Test Cases
 -------------------------------------------------------------------------------
