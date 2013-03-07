@@ -80,7 +80,7 @@ Test Cases
 	  updating a subtree ("animal/bug") and any dependencies ("ecosystem").
 	* Cascade-build "ecosystem" project
 
-Updating dependencies locally to prepare for cascade build
+Idea: Efficiently Updating Local Dependencies
 -------------------------------------------------------------------------------
 
 How do we update the minimal set of projects for a new release? For example,
