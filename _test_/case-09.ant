@@ -32,6 +32,8 @@
 		<!-- update to snapshots -->
 		<exec executable="${executable}">
 
+			<arg value="versions:update-parent" />
+
 			<arg value="versions:use-latest-versions" />
 
 			<arg value="--define" />
