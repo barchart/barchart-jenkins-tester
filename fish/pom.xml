@@ -27,10 +27,10 @@
 	<modules>
 
 		<!-- Level 2 project. -->
-		<module>salmon</module>
+		<!-- <module>salmon</module> -->
 
 		<!-- Level 2 project. -->
-		<module>shark</module>
+		<!-- <module>shark</module> -->
 
 	</modules>
 

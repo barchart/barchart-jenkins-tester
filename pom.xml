@@ -11,6 +11,8 @@
 
 	<description>Eclipse/Jenkins/Maven import helper.</description>
 
+	<!-- Maven multi-module builds are not permitted.  -->
+	
 	<modules>
 
 		<!-- Level 1 archon. -->
@@ -22,14 +24,21 @@
 		<!-- Level 1 archon. -->
 		<module>fish</module>
 
+		<module>fish/salmon</module>
+		<module>fish/shark</module>
+
 		<!-- Level 1 archon. -->
 		<module>mammal</module>
-
-		<!-- Level 3 project. -->
+		
+		<module>mammal/aquatic</module>
 		<module>mammal/aquatic/dolphin</module>
-		<!-- Level 3 project. -->
 		<module>mammal/aquatic/whale</module>
 
+
+		<module>mammal/terrestrial</module>
+		<module>mammal/terrestrial/cat</module>
+		<module>mammal/terrestrial/dog</module>
+		
 		<!-- Level 1 project. -->
 		<module>zoo</module>
 
