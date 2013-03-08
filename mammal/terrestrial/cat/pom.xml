@@ -6,20 +6,20 @@
 	<parent>
 		<groupId>com.barchart.test</groupId>
 		<artifactId>tester-mammal-terrestrial</artifactId>
-		<version>1.3.0</version>
+		<version>1.3.1-SNAPSHOT</version>
 		<relativePath>../</relativePath>
 	</parent>
 
 	<!-- Level 3 project. -->
 	<artifactId>tester-mammal-terrestrial-cat</artifactId>
-	<version>1.5.0</version>
+	<version>1.5.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<scm>
 		<url>https://github.com/barchart/barchart-jenkins-tester</url>
 		<connection>scm:git:git://github.com/barchart/barchart-jenkins-tester.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/barchart/barchart-jenkins-tester.git</developerConnection>
-		<tag>tester-mammal-1.2.0</tag>
+		<tag>master</tag>
 	</scm>
 
 </project>
