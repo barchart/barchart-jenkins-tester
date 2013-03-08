@@ -21,20 +21,6 @@
 
 		</exec>
 
-		<!-- release projects -->
-		<exec executable="${executable}">
-
-			<arg value="release:prepare" />
-			<arg value="release:perform" />
-
-			<arg value="--define" />
-			<arg value="resume=false" />
-
-			<arg value="--define" />
-			<arg value="localCheckout=true" />
-
-		</exec>
-
 		<!-- deploy snapshots -->
 		<exec executable="${executable}">
 
