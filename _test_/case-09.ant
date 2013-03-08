@@ -38,6 +38,9 @@
 			<arg value="allowSnapshots=true" />
 
 			<arg value="--define" />
+			<arg value="excludeReactor=false" />
+
+			<arg value="--define" />
 			<arg value="allowMajorUpdates=false" />
 			<arg value="--define" />
 			<arg value="allowMinorUpdates=false" />
