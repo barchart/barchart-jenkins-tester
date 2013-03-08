@@ -14,13 +14,14 @@
 			<os family="windows" />
 		</condition>
 
+		<!-- update SCM -->
 		<exec executable="git">
 
 			<arg value="pull" />
 
 		</exec>
 
-		<!-- release -->
+		<!-- release projects -->
 		<exec executable="${executable}">
 
 			<arg value="release:prepare" />
@@ -42,7 +43,7 @@
 
 		</exec>
 
-		<!-- update to snapshot -->
+		<!-- update to snapshots -->
 		<exec executable="${executable}">
 
 			<arg value="versions:use-latest-versions" />
@@ -59,7 +60,7 @@
 
 		</exec>
 
-		<!-- commit pom.xml -->
+		<!-- commit version changes -->
 		<exec executable="${executable}">
 
 			<arg value="scm:checkin" />
