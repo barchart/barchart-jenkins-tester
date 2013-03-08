@@ -37,10 +37,13 @@
 			<arg value="versions:use-latest-versions" />
 
 			<arg value="--define" />
-			<arg value="allowSnapshots=true" />
+			<arg value="excludeReactor=false" />
 
 			<arg value="--define" />
-			<arg value="excludeReactor=false" />
+			<arg value="generateBackupPoms=false" />
+
+			<arg value="--define" />
+			<arg value="allowSnapshots=true" />
 
 			<arg value="--define" />
 			<arg value="allowMajorUpdates=false" />
