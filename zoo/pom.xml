@@ -14,7 +14,7 @@
 	<groupId>com.barchart.test</groupId>
 	<artifactId>tester-zoo</artifactId>
 	<version>1.1.12-SNAPSHOT</version>
-	<packaging>pom</packaging>
+	<packaging>jar</packaging>
 
 	<scm>
 		<url>https://github.com/barchart/barchart-jenkins-tester</url>
