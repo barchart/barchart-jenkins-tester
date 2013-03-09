@@ -7,7 +7,7 @@
 	<parent>
 		<groupId>com.barchart.test</groupId>
 		<artifactId>tester-archon</artifactId>
-		<version>1.0.31</version>
+		<version>1.0.32-SNAPSHOT</version>
 		<relativePath>../a/</relativePath>
 	</parent>
 
@@ -28,13 +28,13 @@
 		<dependency>
 			<groupId>com.barchart.test</groupId>
 			<artifactId>tester-ant</artifactId>
-			<version>1.0.69</version>
+			<version>1.0.70-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.barchart.test</groupId>
 			<artifactId>tester-fish-shark</artifactId>
-			<version>2.0.3</version>
+			<version>2.0.6-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
