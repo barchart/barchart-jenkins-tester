@@ -23,4 +23,14 @@
 		<tag>master</tag>
 	</scm>
 
+	<dependencies>
+
+		<dependency>
+			<groupId>com.barchart.test</groupId>
+			<artifactId>tester-mammal-aquatic-dolphin</artifactId>
+			<version>1.5.0-SNAPSHOT</version>
+		</dependency>
+
+	</dependencies>
+
 </project>
