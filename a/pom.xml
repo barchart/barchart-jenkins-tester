@@ -5,14 +5,14 @@
 	<!-- Level 1 archon. -->
 	<groupId>com.barchart.test</groupId>
 	<artifactId>tester-archon</artifactId>
-	<version>1.0.34-SNAPSHOT</version>
+	<version>1.0.34</version>
 	<packaging>pom</packaging>
 
 	<scm>
 		<url>https://github.com/barchart/barchart-jenkins-tester</url>
 		<connection>scm:git:git://github.com/barchart/barchart-jenkins-tester.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/barchart/barchart-jenkins-tester.git</developerConnection>
-		<tag>master</tag>
+		<tag>tester-archon-1.0.34</tag>
 	</scm>
 
 	<properties>
