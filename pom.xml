@@ -5,7 +5,7 @@
 
 	<!-- Level 0 archon. -->
 	<groupId>com.barchart.test</groupId>
-	<artifactId>tester-import</artifactId>
+	<artifactId>barchart-jenkins-tester</artifactId>
 	<version>0.0.0</version>
 	<packaging>pom</packaging>
 
