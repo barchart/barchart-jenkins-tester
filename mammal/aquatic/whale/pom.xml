@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>com.barchart.test</groupId>
 		<artifactId>tester-mammal-aquatic</artifactId>
-		<version>1.3.4</version>
+		<version>1.3.5-SNAPSHOT</version>
 		<relativePath>../</relativePath>
 	</parent>
 
@@ -27,7 +27,7 @@
 		<dependency>
 			<groupId>com.barchart.test</groupId>
 			<artifactId>tester-mammal-aquatic-dolphin</artifactId>
-			<version>1.5.3</version>
+			<version>1.5.4-SNAPSHOT</version>
 		</dependency>
 
 	</dependencies>
