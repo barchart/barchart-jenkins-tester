@@ -12,14 +12,14 @@
 
 	<!-- Level 2 project. -->
 	<artifactId>tester-fish-shark</artifactId>
-	<version>2.0.13</version>
+	<version>2.0.14-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<scm>
 		<url>https://github.com/barchart/barchart-jenkins-tester</url>
 		<connection>scm:git:git://github.com/barchart/barchart-jenkins-tester.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/barchart/barchart-jenkins-tester.git</developerConnection>
-		<tag>tester-fish-shark-2.0.13</tag>
+		<tag>master</tag>
 	</scm>
 
 	<dependencies>
