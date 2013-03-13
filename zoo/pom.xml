@@ -12,14 +12,14 @@
 
 	<!-- Level 1 project. -->
 	<artifactId>tester-zoo</artifactId>
-	<version>1.2.7-SNAPSHOT</version>
+	<version>1.2.7</version>
 	<packaging>jar</packaging>
 
 	<scm>
 		<url>https://github.com/barchart/barchart-jenkins-tester</url>
 		<connection>scm:git:git://github.com/barchart/barchart-jenkins-tester.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/barchart/barchart-jenkins-tester.git</developerConnection>
-		<tag>master</tag>
+		<tag>tester-zoo-1.2.7</tag>
 	</scm>
 
 	<dependencies>
