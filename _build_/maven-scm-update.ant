@@ -1,0 +1,32 @@
+<!--
+	Ensure everything is a snapshot.
+-->
+<project default="maven" basedir="../.">
+
+	<echo message="basedir : ${basedir}" />
+
+	<target name="maven">
+
+		<condition property="executable" value="mvn">
+			<os family="unix" />
+		</condition>
+		<condition property="executable" value="mvn.bat">
+			<os family="windows" />
+		</condition>
+
+		<!-- commit version changes -->
+		<exec executable="${executable}">
+
+			<arg value="scm:update" />
+
+			<arg value="--define" />
+			<arg value="includes=**/pom.xml" />
+
+			<arg value="--define" />
+			<arg value="message=case-09" />
+
+		</exec>
+
+	</target>
+
+</project>
