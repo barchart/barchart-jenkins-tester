@@ -13,14 +13,14 @@
 	<!-- Level 1 archon. -->
 	<groupId>com.barchart.test</groupId>
 	<artifactId>tester-fish</artifactId>
-	<version>1.1.16</version>
+	<version>1.1.17-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<scm>
 		<url>https://github.com/barchart/barchart-jenkins-tester</url>
 		<connection>scm:git:git://github.com/barchart/barchart-jenkins-tester.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/barchart/barchart-jenkins-tester.git</developerConnection>
-		<tag>tester-fish-1.1.16</tag>
+		<tag>master</tag>
 	</scm>
 
 	<modules>
