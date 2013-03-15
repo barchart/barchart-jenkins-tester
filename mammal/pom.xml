@@ -6,13 +6,13 @@
 	<parent>
 		<groupId>com.barchart.test</groupId>
 		<artifactId>tester-archon</artifactId>
-		<version>1.0.44-SNAPSHOT</version>
+		<version>1.0.44</version>
 		<relativePath>../a/</relativePath>
 	</parent>
 
 	<!-- Level 1 archon. -->
 	<artifactId>tester-mammal</artifactId>
-	<version>1.2.11-SNAPSHOT</version>
+	<version>1.2.12-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<scm>
