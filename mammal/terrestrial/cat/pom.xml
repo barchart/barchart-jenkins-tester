@@ -12,7 +12,7 @@
 
 	<!-- Level 3 project. -->
 	<artifactId>tester-mammal-terrestrial-cat</artifactId>
-	<version>1.5.8</version>
+	<version>1.6.10-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<scm>
