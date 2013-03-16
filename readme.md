@@ -3,7 +3,7 @@ barchart-jenkins-tester
 
 Jenkins plugins use cases collection.
 
-See
+See:
 
 https://github.com/barchart/barchart-jenkins-tester/wiki
 
