@@ -9,4 +9,3 @@ https://github.com/barchart/barchart-jenkins-tester/wiki
 
 https://github.com/barchart/barchart-jenkins-cascade-plugin/wiki
 
-a
