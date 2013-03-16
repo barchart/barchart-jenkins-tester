@@ -45,7 +45,7 @@
 		<dependency>
 			<groupId>com.barchart.test</groupId>
 			<artifactId>tester-mammal-terrestrial-dog</artifactId>
-			<version>1.5.11</version>
+			<version>1.5.12-SNAPSHOT</version>
 		</dependency>
 
 	</dependencies>
