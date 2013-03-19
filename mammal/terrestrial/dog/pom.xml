@@ -28,7 +28,7 @@
 		<dependency>
 			<groupId>com.barchart.test</groupId>
 			<artifactId>tester-mammal-terrestrial-cat</artifactId>
-			<version>1.6.19-SNAPSHOT</version>
+			<version>1.6.19</version>
 		</dependency>
 
 	</dependencies>
