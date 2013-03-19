@@ -57,6 +57,9 @@
 			<arg value="--define" />
 			<arg value="allowIncrementalUpdates=true" />
 
+			<arg value="--define" />
+			<arg value="includes=com.barchart.test:*" />
+
 		</exec>
 
 		<!-- commit version changes -->
