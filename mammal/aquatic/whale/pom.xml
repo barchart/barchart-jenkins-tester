@@ -27,7 +27,7 @@
 		<dependency>
 			<groupId>com.barchart.test</groupId>
 			<artifactId>tester-mammal-aquatic-dolphin</artifactId>
-			<version>1.5.18-SNAPSHOT</version>
+			<version>1.5.18</version>
 		</dependency>
 
 	</dependencies>
