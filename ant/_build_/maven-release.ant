@@ -16,17 +16,15 @@
 
 		<exec executable="${executable}">
 
+			<arg value="release:clean" />
 			<arg value="release:prepare" />
 			<arg value="release:perform" />
 
 			<arg value="--define" />
-			<arg value="resume=false" />
+			<arg value="resume=-DskipTests" />
 
 			<arg value="--define" />
 			<arg value="localCheckout=true" />
-
-			<arg value="--define" />
-			<arg value="pushChanges=true" />
 
 		</exec>
 
