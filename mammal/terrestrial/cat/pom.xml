@@ -12,7 +12,7 @@
 
 	<!-- Level 3 project. -->
 	<artifactId>tester-mammal-terrestrial-cat</artifactId>
-	<version>1.6.19-SNAPSHOT</version>
+	<version>1.6.19</version>
 	<packaging>jar</packaging>
 
 	<!-- This module contains intentionally failing test. -->
@@ -21,7 +21,7 @@
 		<url>https://github.com/barchart/barchart-jenkins-tester</url>
 		<connection>scm:git:git://github.com/barchart/barchart-jenkins-tester.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/barchart/barchart-jenkins-tester.git</developerConnection>
-		<tag>tester-mammal-terrestrial-cat-1.5.8</tag>
+		<tag>tester-mammal-terrestrial-cat-1.6.19</tag>
 	</scm>
 
 	<dependencies>
