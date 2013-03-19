@@ -21,7 +21,7 @@
 			<arg value="release:perform" />
 
 			<arg value="--define" />
-			<arg value="resume=-DskipTests" />
+			<arg value="arguments=-DskipTests" />
 
 			<arg value="--define" />
 			<arg value="localCheckout=true" />
