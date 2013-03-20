@@ -39,13 +39,13 @@
 		<dependency>
 			<groupId>com.barchart.test</groupId>
 			<artifactId>tester-mammal-aquatic-whale</artifactId>
-			<version>1.5.23-SNAPSHOT</version>
+			<version>1.5.23</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.barchart.test</groupId>
 			<artifactId>tester-mammal-terrestrial-dog</artifactId>
-			<version>1.5.23-SNAPSHOT</version>
+			<version>1.5.23</version>
 		</dependency>
 
 	</dependencies>
