@@ -12,14 +12,14 @@
 
 	<!-- Level 3 project. -->
 	<artifactId>tester-mammal-aquatic-dolphin</artifactId>
-	<version>1.5.26</version>
+	<version>1.5.27-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<scm>
 		<url>https://github.com/barchart/barchart-jenkins-tester</url>
 		<connection>scm:git:git://github.com/barchart/barchart-jenkins-tester.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/barchart/barchart-jenkins-tester.git</developerConnection>
-		<tag>tester-mammal-aquatic-dolphin-1.5.26</tag>
+		<tag>master</tag>
 	</scm>
 
 	<dependencies>
