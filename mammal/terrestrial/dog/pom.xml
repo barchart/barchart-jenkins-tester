@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>com.barchart.test</groupId>
 		<artifactId>tester-mammal-terrestrial</artifactId>
-		<version>1.3.24</version>
+		<version>1.3.25-SNAPSHOT</version>
 		<relativePath>../</relativePath>
 	</parent>
 
@@ -28,7 +28,7 @@
 		<dependency>
 			<groupId>com.barchart.test</groupId>
 			<artifactId>tester-mammal-terrestrial-cat</artifactId>
-			<version>1.6.24</version>
+			<version>1.6.25-SNAPSHOT</version>
 		</dependency>
 
 	</dependencies>
