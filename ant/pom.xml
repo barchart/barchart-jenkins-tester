@@ -12,7 +12,7 @@
 
 	<!-- Level 1 project -->
 	<artifactId>tester-ant</artifactId>
-	<version>1.0.142-SNAPSHOT</version>
+	<version>1.0.142</version>
 	<packaging>jar</packaging>
 
 	<!-- This module contains intentionally failing test. -->
@@ -21,7 +21,7 @@
 		<url>https://github.com/barchart/barchart-jenkins-tester</url>
 		<connection>scm:git:git://github.com/barchart/barchart-jenkins-tester.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/barchart/barchart-jenkins-tester.git</developerConnection>
-		<tag>master</tag>
+		<tag>tester-ant-1.0.142</tag>
 	</scm>
 
 	<dependencies>
